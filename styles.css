@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: rgb(243, 107, 61);
+   font-family: 'Roboto', sans-serif;
+}
+
+.container {
+   background: #F7F8FC;
+   width: 60%;
+   height: 100vh;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   position: relative;
+   overflow: hidden;
+}
+
+.container::before {
+   content: '';
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 650px;
+   height: 650px;
+   background: #10182F;
+   border-radius: 50%;
+   z-index: 1;
+}
+
+.card {
+   background: #fff;
+   flex-basis: 260px;
+   height: 480px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+   text-align: center;
+   border: 1px solid #dddddd;
+   border-radius: 7px;
+   box-shadow: 0 0 50px rgba(16, 24, 47, 0.1);
+   z-index: 2;
+}
+
+.card:nth-child(1) {
+   transform: rotate(-15deg) translate(-13%, 44%);
+}
+
+.card:nth-child(2) {
+   transform: rotate(-15deg) translateX(-6%);
+}
+
+.card:nth-child(3) {
+   transform: rotate(-15deg) translateY(10%);
+}
+
+.card .card-header {
+   background: #F7F8FC;
+   width: 100%;
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 40px 0;
+   border-radius: 7px;
+}
+
+.card h2 {
+   color: #10182F;
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+
+.card h1 {
+   color: #10182F;
+   font-size: 35px;
+}
+
+.card h1 span {
+   display: block;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.card button {
+   background: #10182F;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 500;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 35px;
+   cursor: pointer;
+}
+
+
+.card ul {
+   flex: 1;
+   background: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+   padding: 20px 3px 20px 50px;
+   border-radius: 7px;
+}
+
+.card ul li {
+   color: #10182F;
+   list-style-image: url('./checkmark.svg');
+   font-size: 12px;
+   font-weight: 400;
+   text-transform: capitalize;
+   text-align: left;
+   line-height: 0.9;
+}
